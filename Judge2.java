@@ -6,6 +6,9 @@ public class Judge2 {
 
 		String kekka;  //各条件付けに合致した際のジャンケン結果を入れる為の変数
 		String jyanken;  //各条件付けに合致した際のCP側とユーザの出した手を入れる為の変数
+		String lastanswer;
+
+		for (int i =0; ; i++) {
 		if (randomvarue==1  && userinput==1 ) {//条件randomvarueが１と同じでかつuserinputも1の時
 			kekka = "引き分け";
 			jyanken ="CP側グーVSユーザ側グーで";
@@ -26,11 +29,17 @@ public class Judge2 {
 			kekka = "引き分け";
 			jyanken ="CP側パーVSユーザ側パーで";
 		}
+
+		if( userinput==0) {
+			System.out.println("0が選択されたのでジャンケンを終了します。");
+			break;
+		}
 		else{// if (randomvarue==2  && userinput==3) {//条件randomvarueが2と同じでかつuserinputも3の時
 			kekka = "ユーザの勝利";
 			jyanken ="CP側パーVSユーザ側チョキで";
+			lastanswer =(jyanken+kekka);
 		}
-		String lastanswer = (jyanken+kekka);
+}
 		return lastanswer ;
 	}
 }

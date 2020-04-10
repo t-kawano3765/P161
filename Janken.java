@@ -8,10 +8,10 @@ public class Janken {
 		System.out.println("じゃんけんしましよう");
 		System.out.println("ゲーム終了:0"+"つづける:1");
 
+		for (int i =0; ; i++ ) {  //logica649
 		Scanner scan = new Scanner(System.in); //標準入力の準備
 		int select = scan.nextInt();
 
-		for (int i =0;i<2 ; i++ ) {
 			if (select ==0) {
 				System.out.println("０が選択されたので終了します。");
 				break;
@@ -26,10 +26,10 @@ public class Janken {
 
 				int userinput = input2.User();  //input2メソッドに対してメッセージも取り値を変数userinputに代入
 				System.out.println(userinput);//変数userinputを出力
-                            
+
 				Judge2 judge =new Judge2(); // Judge2クラスのインスタンス化
 				String answer= judge.judGement(randomvarue,userinput);  //judGementへメッセージと引数を送り戻り値を変数answerに代入
-                System.out.println( answer);//最後に処理結果を表氏する。	  
+                System.out.println( answer);//最後に処理結果を表氏する。
 			}
 		}
 	}
