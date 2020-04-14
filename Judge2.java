@@ -15,7 +15,7 @@ public class Judge2 {
 
 		if (randomvarue== userinput ) {//条件randomvarueが１と同じでかつuserinputも1の時
 			kekka = "引き分け";
-			jyanken ="CP側グーVSユーザ側グーで";
+			jyanken ="CP側VSユーザ側同じ手なので";
 
 		}
 		else if (randomvarue==1  && userinput==2 ) {//条件randomvarueが１と同じでかつuserinputも2の時
