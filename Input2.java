@@ -2,7 +2,7 @@ package game2;
 import java.util.Random;
 import java.util.Scanner;
 public class Input2 {
-  
+	int userinput;
 	public int  computer() {  //computerメソッド
 		Random random = new Random(); //乱数生成の準備
 		int randamno = random.nextInt(2);//生成した乱数を変数randomnoに代入する
@@ -15,10 +15,10 @@ public class Input2 {
 
 		Scanner scan = new Scanner(System.in); //標準入力の準備
 
-		int userinput = scan.nextInt(); //標準入力した値をを変数uerinputに代入
+		userinput = scan.nextInt(); //標準入力した値をを変数uerinputに代入
 
-		System.out.println(userinput+"０が”選択された為、ジャンケンを終了します。");	
-		
-		return userinput;    	//戻り値として変数userinputを返す     
-       }
+		//        System.out.println("継続の選択は"+userinput);
+		return this.userinput;
+	}
 }
+
